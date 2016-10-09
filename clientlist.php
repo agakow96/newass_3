@@ -45,6 +45,6 @@ while($stmt->fetch()){
  <input type="submit" value="Delete">
  </select>
  </form>
-
+<a href="projects.php">Go to projects/edit projects</a> 
 </body>
 </html>
