@@ -16,7 +16,7 @@ $prid = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT) or die('missing param
 <ul>
 <?php
 require_once 'dbcon.php';
-$sql = 'SELECT Project_Name, Project_Description, Other_Project_Details, Clients_clients_ID FROM Project1db.Projects where Project_ID=?';
+$sql = 'SELECT Project_Name, Project_Description, Other_Project_Details, Clients_clients_ID FROM Project1db.Projects WHERE Project_ID=?';
 
 $stmt = $link->prepare($sql);
 $stmt->bind_param('i', $prid);

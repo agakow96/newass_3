@@ -34,7 +34,7 @@ while($stmt->fetch()){
  <form action="deleteclient.php" method="post">
  <select name="cid">
 		<?php
-		$sql = 'Select Client_Name, `clients_ID` FROM clients;';
+		$sql = 'Select Client_Name, `clients_ID` FROM Clients;';
    		$stmt = $link->prepare($sql);
     	$stmt->execute();
     	$stmt->bind_result($clname, $cid);

@@ -30,7 +30,7 @@ $stmt->bind_result($clname, $claddress, $clzip, $clcontact);
 
 while($stmt->fetch()){
 
-	echo '<li><a href="filmlist.php?cid='.$cid.'">'.$clname.'</a></li>'.PHP_EOL;
+	echo '<li>'.$clname.'</a></li>'.PHP_EOL;
 	echo '<li> Address: '.$claddress.', '.$clzip.'</li>';
 	echo  '<li> Contact number : '.$clcontact.'</li>';
 }
